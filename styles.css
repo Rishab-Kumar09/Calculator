@@ -1,0 +1,94 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+    border: 5px solid black;
+    border-radius: 20px;
+    height: 90vh;
+    width: 60vw;
+    margin-left: 20vw;
+    gap:4vh;
+    margin-top: 30px;
+    background-color: burlywood;
+}
+#inputBox{
+    /* to remove arrow buttons in inputbox */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+
+#inputBox input{
+    height: 9vh;
+    width: 55vw;
+    font-size: 4vh;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.ButtonLine{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.buttons{
+    height: 10vh;
+    width: 10vw;
+    background-color: rgb(66, 64, 64);
+    color: white;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.operators{
+    background-color: rgb(212, 59, 3);
+}
+
+#zero button{
+    width: 24vw;
+}
+
+#AC button{
+    font-size: 1.7rem;
+    width: 24vw;
+}
+
+#brandname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: rgb(101, 62, 3);
+    color: gold;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    gap:0;
+}
+
+#equal{
+    background-color: goldenrod;
+}
+
+@media screen and (max-width: 750px) {
+    .buttons{
+        font-size: 5vw;
+    }
+    #AC button{
+        font-size: 4vw;
+    }
+
+    #brandname{
+        font-size: 2.5vh;
+        height: 5vh;
+    }
+}
